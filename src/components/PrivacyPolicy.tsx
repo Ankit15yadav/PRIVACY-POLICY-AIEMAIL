@@ -49,7 +49,7 @@ const PrivacyPolicy: React.FC = () => {
 
             <Section title="Information We Collect" icon={<Mail size={24} />}>
                 <ul className="list-disc pl-6 mb-2 space-y-2">
-                    <li><strong>Personal Information:</strong> We collect information such as your name, email address, and payment details when you sign up for our service.</li>
+                    <li><strong>Authentication Information:</strong> We use Clerk for user authentication, which may collect information such as your name and email address.</li>
                     <li><strong>Email Data:</strong> Through our integration with aurinko.io, we access and process your email data to provide our AI-assisted email management services.</li>
                     <li><strong>Non-Personal Information:</strong> We may collect data such as IP addresses, device information, and usage statistics.</li>
                     <li><strong>Cookies:</strong> We use cookies to improve user experience and analyze our website traffic.</li>
@@ -60,9 +60,9 @@ const PrivacyPolicy: React.FC = () => {
                 <p>We use the information to:</p>
                 <ul className="list-disc pl-6 mb-2 space-y-2">
                     <li>Provide and maintain our AI-powered email management services.</li>
-                    <li>Process transactions and manage your account.</li>
-                    <li>Analyze and improve your email composition and responses using AI.</li>
-                    <li>Communicate with you about our services, updates, and support.</li>
+                    <li>Allow you to log in and access your email account through aurinko.io integration.</li>
+                    <li>Display your emails within our application.</li>
+                    <li>Enable AI-assisted email composition and replies.</li>
                     <li>Enhance and personalize your user experience.</li>
                     <li>Comply with legal obligations.</li>
                 </ul>
@@ -72,7 +72,8 @@ const PrivacyPolicy: React.FC = () => {
                 <p>We do not sell your personal information. We may share your information in the following circumstances:</p>
                 <ul className="list-disc pl-6 mb-2 space-y-2">
                     <li>With aurinko.io to facilitate email access and management.</li>
-                    <li>With service providers who assist us in delivering our services (e.g., cloud storage providers, payment processors).</li>
+                    <li>With Clerk for user authentication purposes.</li>
+                    <li>With service providers who assist us in delivering our services (e.g., cloud storage providers).</li>
                     <li>If required by law or to protect our rights or the rights of others.</li>
                 </ul>
             </Section>
@@ -94,7 +95,7 @@ const PrivacyPolicy: React.FC = () => {
             <Section title="AI and Data Processing" icon={<Cookie size={24} />}>
                 <p>Our service uses artificial intelligence to analyze and process your emails. This includes:</p>
                 <ul className="list-disc pl-6 mb-2 space-y-2">
-                    <li>Automated email composition and suggestions.</li>
+                    <li>AI-assisted email composition and suggestions.</li>
                     <li>AI-powered email analysis and categorization.</li>
                     <li>Smart reply generation.</li>
                 </ul>
